@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import UserRegister from "../../Page/Admin/Register/UserRegister";
 import Home from "../../Page/Public/Home/Home";
 import AdminLogin from "../../Page/Public/Login/AdminLogin/AdminLogin";
 import DoctorLogin from "../../Page/Public/Login/DoctorLogin/DoctorLogin";
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
                 path: "patient-register",
                 element: <PatientRegister></PatientRegister>,
             },
+            { path: "user-register", element: <UserRegister></UserRegister> },
         ],
     },
 ]);
