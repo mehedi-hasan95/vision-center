@@ -7,28 +7,28 @@ import { Footer } from "@/components/common/footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Community Eye Center",
-  description: "Community Eye Center",
+    title: "Community Eye Center",
+    description: "Community Eye Center",
 };
 
 export default function RootLayout({
-  children,
+    children,
 }: Readonly<{
-  children: React.ReactNode;
+    children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body
-        className={cn(
-          inter.className,
-          "bg-gradient-to-b from-[#98B5C7] via-[#316B93] to-[#004679] min-h-screen"
-        )}
-      >
-        <div className="max-w-screen-lg mx-auto bg-white">
-          {children}
-          <Footer />
-        </div>
-      </body>
-    </html>
-  );
+    return (
+        <html lang="en">
+            <body
+                className={cn(
+                    inter.className,
+                    "bg-gradient-to-b from-[#98B5C7] via-[#316B93] to-[#004679] bg-no-repeat bg-contain min-h-screen"
+                )}
+            >
+                <div className="max-w-screen-lg mx-auto bg-white">
+                    {children}
+                    <Footer />
+                </div>
+            </body>
+        </html>
+    );
 }
